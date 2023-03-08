@@ -1,3 +1,5 @@
+import { LessonControllers } from './controllers/lessons.controller';
+import { LessonRepository } from './repositories/lessons.repository';
 import { CoursesController } from './controllers/courses.controller';
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
@@ -17,7 +19,7 @@ import { LessonSchema } from './schemas/lesson.schema';
         }
         ])
     ],
-    controllers: [CoursesController],
-    providers: [CoursesRepository],
+    controllers: [CoursesController, LessonControllers],
+    providers: [CoursesRepository, LessonRepository],
 })
 export class CoursesModule { }

@@ -1,4 +1,4 @@
-import { Controller, Get, ParseIntPipe, Query, BadRequestException } from '@nestjs/common';
+import { Controller, Get, Query, BadRequestException } from '@nestjs/common';
 import { LessonRepository } from '../repositories/lessons.repository';
 
 @Controller('lessons')

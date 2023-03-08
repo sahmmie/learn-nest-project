@@ -1,10 +1,9 @@
-import { HttpExceptionFilter } from './../../filters/http.filter';
 import { CoursesRepository } from './../repositories/courses.repository';
 /*
 https://docs.nestjs.com/controllers#controllers
 */
 
-import { BadRequestException, Body, Controller, Delete, Get, HttpException, HttpStatus, NotFoundException, Param, Post, Put, UseFilters } from '@nestjs/common';
+import { Body, Controller, Delete, Get, NotFoundException, Param, Post, Put } from '@nestjs/common';
 import { Course } from '../../shared/course';
 
 @Controller('courses')
